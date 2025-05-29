@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Pertanyaan Rumah Sewa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Borang Pertanyaan Rumah Sewa</h2>
+        <form action="https://formsubmit.co/your-email@example.com" method="POST">
+            <label for="nama">Nama Penuh</label>
+            <input type="text" id="nama" name="Nama Penuh" required>
+
+            <label for="telefon">Nombor Telefon / WhatsApp</label>
+            <input type="text" id="telefon" name="Telefon" required>
+
+            <label for="emel">Alamat Emel (jika ada)</label>
+            <input type="email" id="emel" name="Emel">
+
+            <label for="jenis">Jenis Pertanyaan</label>
+            <select id="jenis" name="Jenis Pertanyaan">
+                <option value="Maklumat lanjut rumah sewa">Maklumat lanjut rumah sewa</option>
+                <option value="Semakan tarikh kekosongan">Semakan tarikh kekosongan</option>
+                <option value="Lawatan tapak">Lawatan tapak / viewing</option>
+                <option value="Pembayaran & deposit">Cara pembayaran & deposit</option>
+                <option value="Lain-lain">Lain-lain (nyatakan di bawah)</option>
+            </select>
+
+            <label for="mesej">Nyatakan pertanyaan anda secara ringkas</label>
+            <textarea id="mesej" name="Pertanyaan" rows="4" required></textarea>
+
+            <label for="lokasi">Nama Rumah / Lokasi Yang Diminati</label>
+            <input type="text" id="lokasi" name="Lokasi" required>
+
+            <label for="sumber">Bagaimana anda mengetahui tentang rumah ini?</label>
+            <select id="sumber" name="Sumber">
+                <option value="Google Search">Google Search</option>
+                <option value="Facebook / Media Sosial">Facebook / Media Sosial</option>
+                <option value="Rakan / Keluarga">Rakan / Keluarga</option>
+                <option value="Laman Google Sites">Laman Google Sites</option>
+                <option value="Lain-lain">Lain-lain</option>
+            </select>
+
+            <label for="tarikh">Bila anda merancang untuk menyewa?</label>
+            <input type="date" id="tarikh" name="Tarikh Mula Sewa">
+
+            <button type="submit">Hantar Pertanyaan</button>
+        </form>
+    </div>
+</body>
+</html>
